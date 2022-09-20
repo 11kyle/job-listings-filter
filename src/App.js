@@ -91,9 +91,9 @@ function App() {
                   {featured && <Badge isFeatured={featured}>Featured</Badge>}
                 </div>
                 <Title>{position}</Title>
-                <ol className="flex flex-row gap-x-2">
+                <div className="flex flex-row gap-x-2">
                   <Info>{postedAt}</Info><Info>&#8226;</Info><Info>{contract}</Info><Info>&#8226;</Info><Info>{location}</Info>
-                </ol>
+                </div>
               </div>
               <div className="flex flex-row gap-2 flex-wrap border-t border-slate-300 md:border-none py-4 md:py-0 mt-4 md:mt-0 md:ml-auto">
                 <Slug key={role} handleClick={() => addToFilter(role)}>{role}</Slug>
