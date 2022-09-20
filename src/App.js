@@ -37,22 +37,6 @@ function App() {
     },
     [keywords, jobs, numberOfKeywords],
   );
-  // const filterJobs = () => {
-  //   if (keywords.length < 1) {
-  //     setJobs([...jobOpenings]);
-  //   } else {
-  //     if (keywords.length < numberOfKeywords) {
-  //       for (let key in keywords) {
-  //         setJobs([...jobOpenings.filter((job) => job.role === keywords[key] || job.level === keywords[key] || job.languages.includes(keywords[key]) || job.tools.includes(keywords[key]))]);
-  //       }
-  //     } else {
-  //       for (let key in keywords) {
-  //         setJobs([...jobs.filter((job) => job.role === keywords[key] || job.level === keywords[key] || job.languages.includes(keywords[key]) || job.tools.includes(keywords[key]))]);
-  //       }
-  //     }
-  //   }
-  //   setNumberOfKeywords(keywords.length);
-  // }
 
   useEffect(() => {
     filterJobs();
@@ -64,9 +48,6 @@ function App() {
     if (!keywords.includes(newKeyword)) {
       setKeywords([...keywords, newKeyword]);
     }
-  
-    // filterJobs();
-    // setJobs([...jobs.filter((job) => job.role === newKeyword || job.level === newKeyword || job.languages.includes(newKeyword) || job.tools.includes(newKeyword))]);
   }
 
   // Remove keyword from filter
@@ -114,7 +95,7 @@ function App() {
                   <Info>{postedAt}</Info><Info>&#8226;</Info><Info>{contract}</Info><Info>&#8226;</Info><Info>{location}</Info>
                 </ol>
               </div>
-              <div className="flex flex-row gap-2 flex-wrap border-t border-customDarkCyan md:border-none py-4 md:py-0 mt-4 md:mt-0 md:ml-auto">
+              <div className="flex flex-row gap-2 flex-wrap border-t border-slate-300 md:border-none py-4 md:py-0 mt-4 md:mt-0 md:ml-auto">
                 <Slug key={role} handleClick={() => addToFilter(role)}>{role}</Slug>
                 <Slug key={level} handleClick={() => addToFilter(level)}>{level}</Slug>
                 {languages.map((language) => (
