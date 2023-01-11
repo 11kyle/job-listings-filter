@@ -18,8 +18,8 @@ Super great example of filtering in JavaScript. Also, perfect responsive layout 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/11kyle/job-listings-filter)
-- Live Site URL: [Add live site URL here](https://11kyle.github.io/job-listings-filter)
+- Repo URL: [[Add solution URL here](https://github.com/11kyle/job-listings-filter)](https://github.com/11kyle/job-listings-filter)
+- Live Site URL: [[Add live site URL here](https://11kyle.github.io/job-listings-filter)](https://11kyle.github.io/job-listings-filter)
 
 ## My process
 
